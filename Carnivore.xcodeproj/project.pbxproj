@@ -21,6 +21,8 @@
 		29C96C3E1B3F759A00BE0A36 /* Carnivore WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2974FB0E1A3E893700AB4837 /* Carnivore WatchKit App.app */; };
 		29CD2BF21B43BBD900334043 /* MeatTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E0D8F21A92C2550091C97F /* MeatTemperature.swift */; };
 		78E0D8F31A92C2550091C97F /* MeatTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E0D8F21A92C2550091C97F /* MeatTemperature.swift */; };
+		9829F08E1EC6166B004CF2EB /* SFDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9829F08D1EC6166B004CF2EB /* SFDisplay-Regular.otf */; };
+		9829F08F1EC61687004CF2EB /* SFDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9829F08D1EC6166B004CF2EB /* SFDisplay-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,7 @@
 		2974FB171A3E893800AB4837 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		29C96C371B3F757D00BE0A36 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		78E0D8F21A92C2550091C97F /* MeatTemperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeatTemperature.swift; path = "Carnivore WatchKit Extension/MeatTemperature.swift"; sourceTree = SOURCE_ROOT; };
+		9829F08D1EC6166B004CF2EB /* SFDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFDisplay-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,7 @@
 		2974FB051A3E893700AB4837 /* Carnivore WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9829F08D1EC6166B004CF2EB /* SFDisplay-Regular.otf */,
 				2974FB081A3E893700AB4837 /* InterfaceController.swift */,
 				2974FB0A1A3E893700AB4837 /* Images.xcassets */,
 				2974FB061A3E893700AB4837 /* Supporting Files */,
@@ -306,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9829F08E1EC6166B004CF2EB /* SFDisplay-Regular.otf in Resources */,
 				2974FB0B1A3E893700AB4837 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +321,7 @@
 			files = (
 				2974FB161A3E893800AB4837 /* Interface.storyboard in Resources */,
 				2974FB181A3E893800AB4837 /* Images.xcassets in Resources */,
+				9829F08F1EC61687004CF2EB /* SFDisplay-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

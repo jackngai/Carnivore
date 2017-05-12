@@ -25,9 +25,32 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var timerLabel: WKInterfaceTimer!
+    
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
     
+    // Only called to find out the name of the font inside the font file
+    // printFonts()
+    
+    changeFont()
+    
+    
   }
 
+    func changeFont() {
+
+    }
+    
+    func printFonts() {
+        let fontFamilyNames = UIFont.familyNames
+        for familyName in fontFamilyNames {
+            print("*******************************")
+            print("Font Family name = \(familyName)")
+            let names = UIFont.fontNames(forFamilyName: familyName)
+            print("Font Names = \(names)")
+        }
+    }
+    
+    
 }

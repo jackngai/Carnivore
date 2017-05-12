@@ -31,5 +31,9 @@
 	<string>com.raywenderlich.Carnivore</string>
 	<key>WKWatchKitApp</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SFDisplay-Regular.otf</string>
+	</array>
 </dict>
 </plist>

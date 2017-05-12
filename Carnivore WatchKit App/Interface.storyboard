@@ -1,14 +1,32 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
     <scenes>
         <!--Carnivore-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="InitialController" title="Carnivore" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Carnivore_WatchKit_App" customModuleProvider="target"/>
+                <controller identifier="InitialController" title="Carnivore" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Carnivore_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="MBt-b9-hN9">
+                            <items>
+                                <timer alignment="left" id="5XM-PR-1c3">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="timerLabel" destination="5XM-PR-1c3" id="HjS-YD-nfx"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>
