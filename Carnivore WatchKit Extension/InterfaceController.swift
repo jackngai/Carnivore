@@ -25,7 +25,8 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
-    @IBOutlet var timerLabel: WKInterfaceTimer!
+
+    @IBOutlet var timer: WKInterfaceTimer!
     
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
@@ -52,5 +53,14 @@ class InterfaceController: WKInterfaceController {
         }
     }
     
+    @IBAction func onTimerButton() {
+        
+        let countdown: TimeInterval = 20
+        let date = Date(timeIntervalSinceNow: countdown)
+        
+        timer.setDate(date)
+        timer.start()
+        
+    }
     
 }

@@ -14,9 +14,14 @@
             <objects>
                 <controller identifier="InitialController" title="Carnivore" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Carnivore_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" alignment="left" id="MBt-b9-hN9">
+                        <group width="1" alignment="left" layout="vertical" id="MBt-b9-hN9">
                             <items>
-                                <timer alignment="left" id="5XM-PR-1c3">
+                                <button width="1" alignment="left" title="Start Timer" id="vhl-er-dAa">
+                                    <connections>
+                                        <action selector="onTimerButton" destination="AgC-eL-Hgc" id="kh2-7H-H0E"/>
+                                    </connections>
+                                </button>
+                                <timer alignment="center" textAlignment="center" id="5XM-PR-1c3">
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                     <calendarUnit key="units" minute="YES" second="YES"/>
                                 </timer>
@@ -24,7 +29,7 @@
                         </group>
                     </items>
                     <connections>
-                        <outlet property="timerLabel" destination="5XM-PR-1c3" id="HjS-YD-nfx"/>
+                        <outlet property="timer" destination="5XM-PR-1c3" id="HrN-DM-sHH"/>
                     </connections>
                 </controller>
             </objects>
